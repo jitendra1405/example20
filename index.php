@@ -30,7 +30,7 @@
 </nav>
 
 <?php
-$insert = "INSERT INTO contact.contact (name) VALUE ('Haldiram')";
+$insert = "INSERT INTO contact.contact (name) VALUES ('Haldiram')";
 ?>
 
 
