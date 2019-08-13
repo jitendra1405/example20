@@ -30,7 +30,14 @@
 </nav>
 
 <?php
-$insert = "INSERT INTO contact.contact (name) VALUES ('Haldiram')";
+$insert = "INSERT INTO users (name) VALUES ('SaaSnic')";
+        # Execute query
+        if (pg_query($pdo,$insert)) {
+            echo "Data entered successfully. ";
+        }
+        else {
+            echo "Data entry unsuccessful. ";
+        }
 ?>
 
 
