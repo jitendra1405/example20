@@ -37,14 +37,13 @@ class DB_Connect
       } else {
          echo "Opened database successfully\n";
       }
-      return $db;
+      return $pdo;
     }
 }
-	$db1 = new DB_Connect();
-    $conn = $db1->connect();
+	
 
     $query = "insert into contact.contact(name) values('Rittika Kaushik')";
-    $result = pg_query($conn,$query);
+    $result = pg_query($pdo,$query);
     echo $result;
 ?>
 
