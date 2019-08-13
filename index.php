@@ -29,17 +29,8 @@
       </div>
 </nav>
 
- <?php
-$sql = "INSERT INTO contact.contact (name)
-VALUES ('John Doe')";
-
-if ($pdo->query($sql) === TRUE) {
-    echo "New record created successfully";
-} else {
-    echo "Error: " . $sql . "<br>" . $pdo->error;
-}
-
-$pdo->close();
+<?php
+$insert = "INSERT INTO contact.contact (name) VALUE ('Haldiram')";
 ?>
 
 
